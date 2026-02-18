@@ -23,7 +23,7 @@ def simple_auto_game():
         print(f"Attempt {attempts}: Guessing {guess}")
         
         if guess == secret:
-            print(f"✓ SUCCESS! Found {secret} in {attempts} attempts!")
+            print(f"SUCCESS! Found {secret} in {attempts} attempts!")
             print("Game completed successfully!")
             return 0  # Exit code 0 for success
         
@@ -34,7 +34,7 @@ def simple_auto_game():
             print(f"  Too high!")
             high = guess - 1
     
-    print(f"✗ FAILED! Secret number was {secret}")
+    print(f"FAILED! Secret number was {secret}")
     print("Game completed!")
     return 0  # Still exit with 0 as game ran successfully
 
